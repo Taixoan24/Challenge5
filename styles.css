@@ -3,74 +3,196 @@ body {
     margin: 0;
     flex-direction: row;
     width: auto;
+    font-family: 'Montserrat';
 }
+
 .container {
     width: auto;
     margin: 0;
     flex-direction: column;
 }
-.content {}
 
 .cards {
-    background-image: url(./Images/Backround_color.png);
+    background-image: url(./Images/Backround_colors.svg);
     width: 500px;
     height: 1000px;
 }
-.cards .card_blue {
+
+.card_blue {
     padding-left: 130px;
-    padding-top: 150px;
+    padding-top: 180px;
 }
+
 .card_black {
-    padding-top: 120px;
+
     padding-left: 230px;
+    padding-top: 5px;
 }
+
 .card_number {
-    position: absolute;
-    top: 290px;
+    top: 306px;
     left: 200px;
     color: #fff;
     font-size: 19px;
+    color: #F5F5F5;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
 .card_text {
     font-size: 12px;
     color: #fff;
-    position: absolute;
-    top: 320px;
+    top: 356px;
     left: 200px;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
 .card_logo {
-    position: absolute;
     top: 170px;
     left: 150px;
 }
+
 .card_number_black .cvc {
-    top: 630px;
+    top: 572px;
     color: #fff;
-    position: absolute;
     left: 590px;
-}
-.form {
-    color: yellowgreen;
-    background-color: blanchedalmond;
-    width: 500px;
-    height: 294px;
     position: absolute;
-    left: 560px;
+    color: #F5F5F5;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
+.form {
+    color: black;
+    width: 500px;
+    height: 375px;
+    display: grid;
+}
+
 .content {
     display: flex;
-}
-.cards {
-    flex-direction: column;
-    display: flex;
-}
-.form {
-    color: yellowgreen;
-    background-color: blanchedalmond;
-    width: 500px;
-    height: 294px;
-    position: absolute;
-    left: 1016px;
-    top: 285px;
+    grid-column-gap: 25%;
     align-items: center;
 }
+
+input {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0.5rem;
+    background-color: transparent;
+    outline: transparent;
+    padding-right: 40%;
+
+}
+
+.YY {
+    top: 356px;
+    left: 451px;
+    color: #fff;
+    position: absolute;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.card_blue .card_logo,
+.card_text,
+.card_number {
+    position: absolute;
+}
+
+
+.date-cvc {
+    display: flex;
+    gap: 5px;
+}
+
+.form .expire {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.btn {
+  
+    background-color: black;
+    width: 378px;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 15px;
+    background: #3A0652;
+}
+
+.name,
+.number {
+    position: relative;
+}
+
+#number-error-message {
+    position: absolute;
+}
+
+.error {
+    border-color: #f00;
+}
+
+.date input {
+    width: 85px;
+    padding: 15px 5px;
+
+}
+
+.date {
+    gap: px;
+}
+
+.cvc-input {
+    width: 100px;
+    height: 30px;
+}
+
+.name-input,
+.number-input {
+    width: 150px;
+    height: 20px;
+
+}
+
+.cvc {
+    position: relative;
+}
+
+.error-message {
+    position: absolute;
+}
+
+.field-title {
+    color: #808080;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px;
+}
+.cards{
+    padding: -125px;
+}
+/* Thank you! */
