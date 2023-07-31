@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="content">
-            <div class="cards">
 
+            <div class="cards">
                 <div class="card_blue">
-                    <div><img src="Images/Card_blue.svg" alt="">
-                        <div class="card_logo"><img src="Images/card-logo.svg" alt=""></div>
-                        <div class="card_number">0000 0000 0000 0000</div>
-                        <div class="card_text">Jane Appleseed</div>
-                        <div class="YY">00/00</div>
-                    </div>
+                    <img src="Images/Card_blue.svg" alt="" class="card_img">
+                    <div class="card_logo"><img src="Images/card-logo.svg" alt=""></div>
+                    <div class="card_number">0000 0000 0000 0000</div>
+                    <div class="card_text">Jane Appleseed</div>
+                    <div class="YY">00/00</div>
                 </div>
+
+
                 <div class="card_black">
-                    <div class="card_number_black"><img src="Images/Card_black.svg" alt="">
-                        <div class="cvc">123</div>
-                    </div>
+                    <img src="Images/Card_black.svg" alt="">
+                    <div class="cvc">123</div>
                 </div>
             </div>
 
             <div class="form">
                 <div class="name">
                     <div class="field-title">CARDHOLDER NAME</div>
-                    <input class="name-input" type="text" placeholder="e.g Phuong Tai" id="name-input">
+                    <input class="name-input" type="text" placeholder="e.g Jane Appleseed" id="name-input">
                     <div class="error-message" id="name-error-message"></div>
                 </div>
 
@@ -57,7 +59,6 @@
                         <div class="error-message" id="cvc-error-message"></div>
                     </div>
                 </div>
-
 
                 <button class="btn" id="submit-btn">Confirm</button>
             </div>

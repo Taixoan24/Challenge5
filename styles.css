@@ -8,14 +8,15 @@ body {
 
 .container {
     width: auto;
+    max-width: 1366px;
     margin: 0;
     flex-direction: column;
 }
 
 .cards {
     background-image: url(./Images/Backround_colors.svg);
-    width: 500px;
-    height: 1000px;
+    width: 430px;
+    height: 800px;
 }
 
 .card_blue {
@@ -25,7 +26,7 @@ body {
 
 .card_black {
 
-    padding-left: 230px;
+    padding-left: 201px;
     padding-top: 5px;
 }
 
@@ -61,7 +62,7 @@ body {
 .card_number_black .cvc {
     top: 572px;
     color: #fff;
-    left: 590px;
+    left: 567px;
     position: absolute;
     color: #F5F5F5;
     font-size: 18px;
@@ -75,6 +76,8 @@ body {
     width: 500px;
     height: 375px;
     display: grid;
+    padding-top: 226px;
+    padding-left: 60px;
 }
 
 .content {
@@ -91,7 +94,6 @@ input {
     background-color: transparent;
     outline: transparent;
     padding-right: 40%;
-
 }
 
 .YY {
@@ -104,7 +106,6 @@ input {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
 .card_blue .card_logo,
@@ -112,7 +113,6 @@ input {
 .card_number {
     position: absolute;
 }
-
 
 .date-cvc {
     display: flex;
@@ -127,7 +127,6 @@ input {
 }
 
 .btn {
-  
     background-color: black;
     width: 378px;
     height: 50px;
@@ -156,25 +155,16 @@ input {
 
 .date input {
     width: 85px;
-    padding: 15px 5px;
-
+    padding: 15px 7px 15px 27px;
 }
 
-.date {
-    gap: px;
-}
 
 .cvc-input {
     width: 100px;
     height: 30px;
 }
 
-.name-input,
-.number-input {
-    width: 150px;
-    height: 20px;
 
-}
 
 .cvc {
     position: relative;
@@ -192,7 +182,48 @@ input {
     line-height: normal;
     padding: 10px;
 }
-.cards{
-    padding: -125px;
+
+.name-input,
+.number-input {
+    color: #808080;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    width: 160px;
+    height: 20px;
+    /* 156.25% */
 }
+
+#month-input {
+    color: #808080;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+#year-input {
+    color: #808080;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+
+}
+.cvc-input {
+    color: #808080;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 12px 25px;
+}
+
 /* Thank you! */
