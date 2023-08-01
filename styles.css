@@ -3,7 +3,7 @@ body {
     margin: 0;
     flex-direction: row;
     width: auto;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -17,6 +17,7 @@ body {
     background-image: url(./Images/Backround_colors.svg);
     width: 430px;
     height: 800px;
+    padding-top: 40px;
 }
 
 .card_blue {
@@ -25,13 +26,12 @@ body {
 }
 
 .card_black {
-
     padding-left: 201px;
-    padding-top: 5px;
+    margin-top: -24px;
 }
 
 .card_number {
-    top: 306px;
+    top: 352px;
     left: 200px;
     color: #fff;
     font-size: 19px;
@@ -45,7 +45,7 @@ body {
 .card_text {
     font-size: 12px;
     color: #fff;
-    top: 356px;
+    top: 397px;
     left: 200px;
     color: #F5F5F5;
     font-size: 16px;
@@ -59,10 +59,10 @@ body {
     left: 150px;
 }
 
-.card_number_black .cvc {
-    top: 572px;
+.card_black .cvc {
+    top: 539px;
     color: #fff;
-    left: 567px;
+    left: 530px;
     position: absolute;
     color: #F5F5F5;
     font-size: 18px;
@@ -75,14 +75,14 @@ body {
     color: black;
     width: 500px;
     height: 375px;
-    display: grid;
-    padding-top: 226px;
+    /* display: grid; */
+    padding-top: 15px;
     padding-left: 60px;
 }
 
 .content {
     display: flex;
-    grid-column-gap: 25%;
+    grid-column-gap: 240px;
     align-items: center;
 }
 
@@ -90,14 +90,14 @@ input {
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
-    padding: 0.5rem;
+    padding: 10px;
     background-color: transparent;
     outline: transparent;
     padding-right: 40%;
 }
 
 .YY {
-    top: 356px;
+    top: 396px;
     left: 451px;
     color: #fff;
     position: absolute;
@@ -110,26 +110,19 @@ input {
 
 .card_blue .card_logo,
 .card_text,
-.card_number {
+.card_number,
+.cvc {
     position: absolute;
 }
 
 .date-cvc {
     display: flex;
-    gap: 5px;
-}
-
-.form .expire {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
 }
 
 .btn {
     background-color: black;
-    width: 378px;
-    height: 50px;
+    width: 497px;
+    padding: 21px 199px 20px 199px;
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -138,6 +131,12 @@ input {
     line-height: normal;
     border-radius: 15px;
     background: #3A0652;
+    cursor: pointer;
+    color: #FFF;
+    font-family: Roboto;
+
+
+
 }
 
 .name,
@@ -157,14 +156,6 @@ input {
     width: 85px;
     padding: 15px 7px 15px 27px;
 }
-
-
-.cvc-input {
-    width: 100px;
-    height: 30px;
-}
-
-
 
 .cvc {
     position: relative;
@@ -186,44 +177,350 @@ input {
 .name-input,
 .number-input {
     color: #808080;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    width: 160px;
-    height: 20px;
-    /* 156.25% */
+    width: 285px;
+
 }
 
 #month-input {
     color: #808080;
     text-align: center;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
+    margin-right: 10px;
+
 }
 
 #year-input {
     color: #808080;
     text-align: center;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-
+    margin-right: 17px;
 }
+
 .cvc-input {
     color: #808080;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    padding: 12px 25px;
+    padding: 15px 12px 15px 12px;
+    width: 190px;
 }
 
-/* Thank you! */
+.card_blue_img,
+.card_black_img {
+    width: 400px;
+    height: 200px;
+    flex-shrink: 0;
+    padding: 24px;
+}
+
+.card_square_big {
+    position: absolute;
+    top: 280px;
+    left: 200px;
+}
+
+.card_square_small {
+    position: absolute;
+    top: 290px;
+    left: 270px;
+}
+
+.submit-btn {
+    padding-top: 50px;
+}
+
+.number,
+.date,
+.cvc {
+    padding-top: 20px;
+}
+
+.name-input,
+.number-input {
+    padding: 15px 12px 15px 14px;
+    width: 459px;
+}
+
+.circle {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+Responsive Mobile */
+@media only screen and (max-width:768px) {
+    .content {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .circle {
+        display: block;
+        position: absolute;
+        top: 129px;
+        left: 65px;
+    }
+
+    .number,
+    .date,
+    .cvc {
+        padding-top: 24px;
+    }
+
+
+    .square {
+        display: none;
+    }
+
+    .card_blue {
+        margin-top: 20px;
+    }
+
+    .card_black .cvc {
+        top: 89px;
+        left: 251px;
+        font-size: 16px;
+    }
+
+    .card_black {
+        position: absolute;
+        top: 5px;
+        left: 35px;
+    }
+
+    .card_blue {
+        padding-top: 130px;
+    }
+
+    .cards {
+        background-image: url(./Images/Square_mobile.svg);
+        width: 400px;
+        height: 732px;
+        flex-shrink: 0;
+        padding-top: 40px;
+    }
+
+    #name-input {
+        color: #808080;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    #name-input {
+        padding: 12px 12px 12px;
+    }
+
+    .form {
+        width: 100%;
+        padding-left: 15px;
+        margin: auto;
+    }
+
+    .cvc-input {
+        color: #808080;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 8px 18px 10px 12px;
+    }
+
+    .name-input,
+    .number-input,
+    input {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .date input {
+        width: 45%;
+        padding: 10px;
+    }
+
+    /* .date-cvc {
+        display: flex;
+        flex-direction: column;
+    } */
+    .cards {
+        width: 100%;
+        height: auto;
+        padding-top: 34px;
+    }
+
+    .card_blue {
+        padding-left: 15px;
+        padding-top: 60px;
+        position: relative;
+    }
+
+    .card_black {
+        padding-left: 15px;
+        margin-top: -24px;
+    }
+
+    .card_logo {
+        top: 80px;
+        left: 60px;
+    }
+
+
+
+    .card_text {
+        top: 160px;
+        left: 60px;
+        font-size: 12px;
+    }
+
+
+
+    .YY,
+    .card_text {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        line-height: 18px;
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .container {
+        position: relative;
+        height: 100vh;
+    }
+
+    #month-input {
+        width: 35px;
+        height: 41px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+        margin-right: 5px;
+    }
+
+    .name-input {
+        padding: 0px 10px 0px 10px;
+    }
+
+    #year-input {
+        width: 35px;
+        height: 41px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+    }
+
+
+    #cvc-input {
+        width: 125px;
+        height: 41px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+    }
+
+    .submit-btn {
+        padding-top: 24px;
+    }
+
+    .card_black_img,
+    .card_blue_img {
+        width: 280px;
+    }
+
+
+    .card_text {
+        color: #F5F5F5;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .form {
+        width: 320px;
+        height: 347px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-bottom: 89px;
+    }
+
+    .field-title {
+        color: #808080;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        padding: 9px;
+    }
+
+    .card_number {
+        top: 198px;
+        left: 66px;
+        font-size: 18px;
+        color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #DEDDDF;
+        font-size: 18px;
+        font-style: normal;
+
+    }
+
+    .card_text {
+        font-size: 12px;
+        color: #fff;
+        top: 230px;
+        left: 67px;
+        color: #F5F5F5;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .YY {
+        top: 230px;
+        left: 262px;
+        color: #fff;
+        position: absolute;
+        color: #F5F5F5;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+}
