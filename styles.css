@@ -393,9 +393,6 @@ Responsive Mobile */
         left: 60px;
         font-size: 12px;
     }
-
-
-
     .YY,
     .card_text {
         font-size: 14px;
@@ -412,7 +409,6 @@ Responsive Mobile */
         position: relative;
         height: 100vh;
     }
-
     #month-input {
         width: 35px;
         height: 41px;
