@@ -1,14 +1,14 @@
-const nameInput = document.getElementById('name-input');
+const nameInput = document.getElementById('name');
 const nameErrorMessage = document.getElementById('name-error-message');
 
-const numberInput = document.getElementById('number-input');
+const numberInput = document.getElementById('number');
 const numberErrorMessage = document.getElementById('number-error-message');
 
-const monthInput = document.getElementById('month-input');
-const yearInput = document.getElementById('year-input');
+const monthInput = document.getElementById('MM');
+const yearInput = document.getElementById('YY');
 const dateErrorMessage = document.getElementById('date-error-message');
 
-const cvcInput = document.getElementById('cvc-input');
+const cvcInput = document.getElementById('CVC');
 const cvcErrorMessage = document.getElementById('cvc-error-message');
 
 const submitBtn = document.getElementById('submit-btn');
@@ -53,4 +53,9 @@ submitBtn.addEventListener('click', function(event) {
     cvcErrorMessage.innerText = '';
     cvcInput.classList.remove('error');
   }
+
+
 });
+
+
+

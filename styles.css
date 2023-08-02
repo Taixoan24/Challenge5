@@ -1,16 +1,24 @@
 body {
     background-color: #fff;
-    margin: 0;
-    flex-direction: row;
-    width: auto;
     font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
+    font-size: 16px;
+    width: auto;
+    margin: 0;
 }
 
 .container {
-    width: auto;
-    max-width: 1366px;
+    width: 100%;
     margin: 0;
     flex-direction: column;
+}
+/* .form input{
+    font-size: 16px;
+} */
+.content {
+    display: flex;
+    grid-column-gap: 240px;
+    align-items: center;
 }
 
 .cards {
@@ -43,12 +51,11 @@ body {
 }
 
 .card_text {
-    font-size: 12px;
+    font-size: 16px;
     color: #fff;
     top: 397px;
     left: 200px;
     color: #F5F5F5;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -73,18 +80,15 @@ body {
 
 .form {
     color: black;
-    width: 500px;
-    height: 375px;
+    /* width: 500px;
+    height: 375px; */
+    padding-bottom: 120px;
     /* display: grid; */
-    padding-top: 15px;
-    padding-left: 60px;
+    padding-top: 267px;
+    padding-left: 160px;
 }
 
-.content {
-    display: flex;
-    grid-column-gap: 240px;
-    align-items: center;
-}
+
 
 input {
     border-radius: 20px;
@@ -94,6 +98,10 @@ input {
     background-color: transparent;
     outline: transparent;
     padding-right: 40%;
+    /* border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+    border-radius: inherit; */
+    box-sizing: border-box;
 }
 
 .YY {
@@ -102,7 +110,6 @@ input {
     color: #fff;
     position: absolute;
     color: #F5F5F5;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -121,11 +128,10 @@ input {
 
 .btn {
     background-color: black;
-    width: 497px;
-    padding: 21px 199px 20px 199px;
+    width: 100%;
+    padding: 21px 0px 20px 0px;
     color: #FFF;
     text-align: center;
-    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -134,8 +140,7 @@ input {
     cursor: pointer;
     color: #FFF;
     font-family: Roboto;
-
-
+    font-size: 16px;
 
 }
 
@@ -167,7 +172,6 @@ input {
 
 .field-title {
     color: #808080;
-    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -177,84 +181,86 @@ input {
 .name-input,
 .number-input {
     color: #808080;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
     width: 285px;
-
 }
 
-#month-input {
+#MM {
     color: #808080;
-    text-align: center;
-    font-size: 16px;
+   
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
     margin-right: 10px;
-
 }
 
-#year-input {
+#YY {
     color: #808080;
-    text-align: center;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    margin-right: 17px;
+    margin-right: 49px;
 }
 
 .cvc-input {
     color: #808080;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
     padding: 15px 12px 15px 12px;
-    width: 190px;
+    width: 100%;
 }
 
 .card_blue_img,
 .card_black_img {
     width: 400px;
-    height: 200px;
+    height: 100%;
     flex-shrink: 0;
     padding: 24px;
 }
-
 .card_square_big {
     position: absolute;
     top: 280px;
     left: 200px;
 }
-
 .card_square_small {
     position: absolute;
     top: 290px;
     left: 270px;
 }
-
 .submit-btn {
     padding-top: 50px;
 }
-
 .number,
 .date,
 .cvc {
     padding-top: 20px;
 }
-
 .name-input,
 .number-input {
     padding: 15px 12px 15px 14px;
-    width: 459px;
+    width: 100%;
+   
 }
-
 .circle {
     display: none;
 }
+.form input{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -271,45 +277,35 @@ Responsive Mobile */
     .content {
         font-family: 'Montserrat', sans-serif;
     }
-
     .circle {
         display: block;
         position: absolute;
         top: 129px;
         left: 65px;
     }
-
     .number,
     .date,
     .cvc {
         padding-top: 24px;
     }
-
-
     .square {
         display: none;
     }
-
     .card_blue {
         margin-top: 20px;
     }
-
     .card_black .cvc {
         top: 89px;
         left: 251px;
-        font-size: 16px;
     }
-
     .card_black {
         position: absolute;
         top: 5px;
         left: 35px;
     }
-
     .card_blue {
         padding-top: 130px;
     }
-
     .cards {
         background-image: url(./Images/Square_mobile.svg);
         width: 400px;
@@ -317,29 +313,22 @@ Responsive Mobile */
         flex-shrink: 0;
         padding-top: 40px;
     }
-
-    #name-input {
+    #name {
         color: #808080;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 25px;
+        padding: 12px 12px 12px;
     }
-
     .content {
         flex-direction: column;
     }
-
-    #name-input {
-        padding: 12px 12px 12px;
-    }
-
     .form {
         width: 100%;
         padding-left: 15px;
         margin: auto;
     }
-
     .cvc-input {
         color: #808080;
         font-size: 16px;
@@ -347,69 +336,54 @@ Responsive Mobile */
         font-weight: 400;
         padding: 8px 18px 10px 12px;
     }
-
     .name-input,
     .number-input,
     input {
         width: 90%;
         padding: 10px;
     }
-
     .date input {
         width: 45%;
         padding: 10px;
     }
-
-    /* .date-cvc {
-        display: flex;
-        flex-direction: column;
-    } */
     .cards {
         width: 100%;
         height: auto;
         padding-top: 34px;
     }
-
     .card_blue {
         padding-left: 15px;
         padding-top: 60px;
         position: relative;
     }
-
     .card_black {
         padding-left: 15px;
         margin-top: -24px;
     }
-
     .card_logo {
         top: 80px;
         left: 60px;
     }
-
-
-
     .card_text {
         top: 160px;
         left: 60px;
         font-size: 12px;
     }
-    .YY,
+    .Y,
     .card_text {
         font-size: 14px;
     }
-
     .btn {
         width: 100%;
         line-height: 18px;
         padding: 16px;
         border-radius: 10px;
     }
-
     .container {
         position: relative;
         height: 100vh;
     }
-    #month-input {
+    #MM {
         width: 35px;
         height: 41px;
         flex-shrink: 0;
@@ -417,37 +391,30 @@ Responsive Mobile */
         background: #FFF;
         margin-right: 5px;
     }
-
     .name-input {
         padding: 0px 10px 0px 10px;
     }
-
-    #year-input {
+    #YY {
         width: 35px;
         height: 41px;
         flex-shrink: 0;
         border-radius: 10px;
         background: #FFF;
     }
-
-
-    #cvc-input {
+    #CVC {
         width: 125px;
         height: 41px;
         flex-shrink: 0;
         border-radius: 10px;
         background: #FFF;
     }
-
     .submit-btn {
         padding-top: 24px;
     }
-
     .card_black_img,
     .card_blue_img {
         width: 280px;
     }
-
 
     .card_text {
         color: #F5F5F5;
@@ -489,9 +456,7 @@ Responsive Mobile */
         font-weight: 400;
         line-height: normal;
         color: #DEDDDF;
-        font-size: 18px;
         font-style: normal;
-
     }
 
     .card_text {
@@ -500,13 +465,12 @@ Responsive Mobile */
         top: 230px;
         left: 67px;
         color: #F5F5F5;
-        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
 
-    .YY {
+    .Y {
         top: 230px;
         left: 262px;
         color: #fff;
