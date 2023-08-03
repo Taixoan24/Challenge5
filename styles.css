@@ -36,6 +36,7 @@ body {
     margin-top: -24px;
 }
 
+
 .card_number {
     top: 352px;
     left: 200px;
@@ -143,7 +144,7 @@ input {
 
 .date input {
     width: 90px;
-    /* padding: 15px 7px 15px 27px; */
+
 }
 
 .cvc {
@@ -179,6 +180,8 @@ input {
     font-weight: 400;
     line-height: 25px;
     margin-right: 6px;
+    text-indent: 5px;
+
 }
 
 #YY {
@@ -188,7 +191,9 @@ input {
     font-weight: 400;
     line-height: 25px;
     margin-right: 49px;
+    text-indent: 5px;
 }
+
 
 .cvc-input {
     color: #808080;
@@ -196,6 +201,8 @@ input {
     font-weight: 400;
     line-height: 25px;
     width: 100%;
+    text-indent: 22px;
+
 }
 
 .card_blue_img,
@@ -225,11 +232,19 @@ input {
 .number,
 .date,
 .cvc {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .circle {
     display: none;
+}
+
+.number-error,
+.name-error-message,
+.month-error-message,
+.year-error-message,
+.cvc-error-message{
+    color: #f00;
 }
 
 .form input {
@@ -242,24 +257,33 @@ input {
     background-clip: content-box, border-box;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    outline: none;
 }
 
+form input[type="text"] {
+    text-indent: 14px;
+}
 
+.input-error {
+    border: 1px solid red;
+}
 
+.date-cvc {
+    display: flex;
+}
 
+form {
+    width: 460px;
+}
 
-
-
-
-
-
-
-
+.dates {
+    display: flex;
+}
 
 /* 
 Responsive Mobile */
 @media only screen and (max-width:768px) {
-   
+
     .content {
         font-family: 'Montserrat', sans-serif;
     }
@@ -280,8 +304,9 @@ Responsive Mobile */
     }
 
     .card_black .cvc {
-        top: 89px;
+        top: 69px;
         left: 251px;
+        font-size: 16px;
     }
 
     .card_black {
@@ -300,7 +325,6 @@ Responsive Mobile */
         height: 732px;
         flex-shrink: 0;
         padding-top: 40px;
-
     }
 
     .content {
@@ -308,9 +332,7 @@ Responsive Mobile */
     }
 
     .form {
-        
         margin: 0 40px
-       
     }
 
     .cvc-input {
@@ -318,6 +340,7 @@ Responsive Mobile */
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
+        width: 160px;
 
     }
 
@@ -350,11 +373,6 @@ Responsive Mobile */
         left: 60px;
     }
 
-    .card_text {
-        top: 160px;
-        left: 60px;
-        font-size: 12px;
-    }
 
     .YY {
         top: 228px;
@@ -366,17 +384,7 @@ Responsive Mobile */
         font-weight: 400;
         line-height: normal;
         font-size: 12px;
-        
-    }
 
-    #MM{
-        width: 72px;
-        
-    }
-
-    .Y,
-    .card_text {
-        font-size: 14px;
     }
 
     .container {
@@ -395,12 +403,13 @@ Responsive Mobile */
 
     .card_text {
         color: #F5F5F5;
-        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        font-size: 16px;
+        top: 230px;
+        left: 67px;
     }
-
 
     .field-title {
         color: #808080;
@@ -409,7 +418,8 @@ Responsive Mobile */
         font-weight: 700;
         line-height: normal;
         text-transform: capitalize;
-        padding: 9px;
+        margin-left: 0;
+        margin-bottom: 9px;
     }
 
     .card_number {
@@ -424,16 +434,7 @@ Responsive Mobile */
         font-style: normal;
     }
 
-    .card_text {
-        font-size: 12px;
-        color: #fff;
-        top: 230px;
-        left: 67px;
-        color: #F5F5F5;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+
 
     .Y {
         top: 230px;
@@ -447,7 +448,6 @@ Responsive Mobile */
         line-height: normal;
         text-transform: uppercase;
     }
-
 
     .form input {
         color: #808080;
@@ -477,34 +477,43 @@ Responsive Mobile */
     .number,
     .date,
     .cvc {
-        padding-top: 24px;
-    }
-
-    .field-title {
-        color: #808080;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin-left: 0;
-        margin-bottom: 10px;
+        margin-top: 24px;
     }
 
     #YY {
-        color: #808080;
-        text-align: center;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 25px;
-        margin-right: 17px;
+        text-align: initial;
+        margin-right: 15px;
         width: 72px;
 
+    }
+
+    #MM {
+        margin-right: 2px;
+        text-align: initial;
     }
 
     .btn {
         width: 100%;
         padding: 16px;
-        
-
     }
+
+    .date input {
+        width: 72px;
+    }
+
+    form input[type="text"] {
+
+        text-indent: 14px;
+    }
+
+    input#MM {
+        text-indent: 18px;
+    }
+
+    input#YY {
+        text-indent: 22px;
+    }
+
+
 
 }
