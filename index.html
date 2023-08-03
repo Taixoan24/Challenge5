@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-
 <body>
     <div class="container">
         <div class="content">
@@ -33,40 +31,44 @@
                     <div class="cvc">000</div>
                 </div>
             </div>
+
             <div class="form">
-                <div class="card_form">
-                    <div class="name">
-                        <div class="field-title">CARDHOLDER NAME</div>
-                        <input class="name-input" type="text" placeholder="e.g Jane Appleseed" id="name">
-                        <div class="error-message" id="name-error-message"></div>
-                    </div>
-                    <div class="number">
-                        <div class="field-title">CARD NUMBER</div>
-                        <input class="number-input" type="number" placeholder="e.g 1234 5678 9123 0000 " id="number">
-                        <div class="error-message" id="number-error-message"></div>
-                    </div>
+                <form action="">
+
+                        <div class="name">
+                            <div class="field-title">Cardholder Name </div>
+                            <input class="name-input" type="text" placeholder="e.g Jane Appleseed" id="name">
+                            <div class="name-error" id="name-error-message"></div>
+                        </div>
+    
+                        <div class="number">
+                            <div class="field-title">Card Number</div>
+                            <input class="number-input" type="" placeholder="e.g 1234 5678 9123 0000 " id="number">
+                            <div class="number-error" id="number-error-message"></div>
+                        </div>
+
                     <div class="date-cvc">
                         <div class="date">
                             <div class="field-title">Exp. Date (MM/YY)</div>
                             <input class="month-input" type="" placeholder="MM" id="MM">
                             <input class="year-input" type="" placeholder="YY" id="YY">
-                            <div class="error-message" id="date-error-message"></div>
+                            <div class="date-error-message" id="date-error-message"></div>
                         </div>
                         <div class="cvc">
                             <div class="field-title">CVC</div>
-                            <input class="cvc-input" type="number" required placeholder="e.g 123" id="CVC">
-                            <div class="error-message" id="cvc-error-message"></div>
+                            <input class="cvc-input" type=""  placeholder="e.g 123" id="CVC">
+                            <div class="cvc-error" id="cvc-error-message"></div>
                         </div>
                     </div>
                     <div class="submit-btn">
                         <button class="btn" id="submit-btn">Confirm</button>
                     </div>
-
+                </form>
                 </div>
+           
             </div>
         </div>
     </div>
     <script src="javascript.js"></script>
 </body>
-
 </html>

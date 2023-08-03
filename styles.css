@@ -12,9 +12,7 @@ body {
     margin: 0;
     flex-direction: column;
 }
-/* .form input{
-    font-size: 16px;
-} */
+
 .content {
     display: flex;
     grid-column-gap: 240px;
@@ -67,9 +65,8 @@ body {
 }
 
 .card_black .cvc {
-    top: 539px;
-    color: #fff;
-    left: 530px;
+    top: 540px;
+    left: 532px;
     position: absolute;
     color: #F5F5F5;
     font-size: 18px;
@@ -80,27 +77,14 @@ body {
 
 .form {
     color: black;
-    /* width: 500px;
-    height: 375px; */
-    padding-bottom: 120px;
-    /* display: grid; */
-    padding-top: 267px;
-    padding-left: 160px;
+    margin-top: 103px;
+    margin-left: 110px;
 }
-
-
 
 input {
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
-    padding: 10px;
-    background-color: transparent;
-    outline: transparent;
-    padding-right: 40%;
-    /* border-image-slice: 1;
-    border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
-    border-radius: inherit; */
     box-sizing: border-box;
 }
 
@@ -158,8 +142,8 @@ input {
 }
 
 .date input {
-    width: 85px;
-    padding: 15px 7px 15px 27px;
+    width: 90px;
+    /* padding: 15px 7px 15px 27px; */
 }
 
 .cvc {
@@ -175,7 +159,8 @@ input {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 10px;
+    margin-left: 14px;
+    margin-bottom: 10px;
 }
 
 .name-input,
@@ -184,20 +169,21 @@ input {
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    width: 285px;
+    width: 100%;
 }
 
 #MM {
     color: #808080;
-   
+    text-align: center;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 #YY {
     color: #808080;
+    text-align: center;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
@@ -209,45 +195,51 @@ input {
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    padding: 15px 12px 15px 12px;
     width: 100%;
 }
 
 .card_blue_img,
 .card_black_img {
     width: 400px;
-    height: 100%;
+    height: 200px;
     flex-shrink: 0;
     padding: 24px;
 }
+
 .card_square_big {
     position: absolute;
     top: 280px;
     left: 200px;
 }
+
 .card_square_small {
     position: absolute;
     top: 290px;
     left: 270px;
 }
+
 .submit-btn {
     padding-top: 50px;
 }
+
 .number,
 .date,
 .cvc {
     padding-top: 20px;
 }
-.name-input,
-.number-input {
-    padding: 15px 12px 15px 14px;
-    width: 100%;
-   
-}
+
 .circle {
     display: none;
 }
-.form input{
+
+.form input {
+    height: 55px;
+    border-image-slice: 1;
+    border-radius: 20px;
+    border: double 1px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(#e66465, #9198E5);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -264,153 +256,138 @@ input {
 
 
 
-
-
-
-
-
-
-
 /* 
 Responsive Mobile */
 @media only screen and (max-width:768px) {
+   
     .content {
         font-family: 'Montserrat', sans-serif;
     }
+
     .circle {
         display: block;
         position: absolute;
         top: 129px;
         left: 65px;
     }
-    .number,
-    .date,
-    .cvc {
-        padding-top: 24px;
-    }
+
     .square {
         display: none;
     }
+
     .card_blue {
         margin-top: 20px;
     }
+
     .card_black .cvc {
         top: 89px;
         left: 251px;
     }
+
     .card_black {
         position: absolute;
         top: 5px;
         left: 35px;
     }
+
     .card_blue {
         padding-top: 130px;
     }
+
     .cards {
         background-image: url(./Images/Square_mobile.svg);
         width: 400px;
         height: 732px;
         flex-shrink: 0;
         padding-top: 40px;
+
     }
-    #name {
-        color: #808080;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 25px;
-        padding: 12px 12px 12px;
-    }
+
     .content {
         flex-direction: column;
     }
+
     .form {
-        width: 100%;
-        padding-left: 15px;
-        margin: auto;
+        
+        margin: 0 40px
+       
     }
+
     .cvc-input {
         color: #808080;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        padding: 8px 18px 10px 12px;
+
     }
+
     .name-input,
     .number-input,
     input {
         width: 90%;
-        padding: 10px;
+
     }
-    .date input {
-        width: 45%;
-        padding: 10px;
-    }
+
     .cards {
         width: 100%;
         height: auto;
         padding-top: 34px;
     }
+
     .card_blue {
         padding-left: 15px;
         padding-top: 60px;
         position: relative;
     }
+
     .card_black {
         padding-left: 15px;
         margin-top: -24px;
     }
+
     .card_logo {
         top: 80px;
         left: 60px;
     }
+
     .card_text {
         top: 160px;
         left: 60px;
         font-size: 12px;
     }
+
+    .YY {
+        top: 228px;
+        left: 259px;
+        color: #fff;
+        position: absolute;
+        color: #F5F5F5;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 12px;
+        
+    }
+
+    #MM{
+        width: 72px;
+        
+    }
+
     .Y,
     .card_text {
         font-size: 14px;
     }
-    .btn {
-        width: 100%;
-        line-height: 18px;
-        padding: 16px;
-        border-radius: 10px;
-    }
+
     .container {
         position: relative;
         height: 100vh;
     }
-    #MM {
-        width: 35px;
-        height: 41px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        background: #FFF;
-        margin-right: 5px;
-    }
-    .name-input {
-        padding: 0px 10px 0px 10px;
-    }
-    #YY {
-        width: 35px;
-        height: 41px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        background: #FFF;
-    }
-    #CVC {
-        width: 125px;
-        height: 41px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        background: #FFF;
-    }
+
     .submit-btn {
         padding-top: 24px;
     }
+
     .card_black_img,
     .card_blue_img {
         width: 280px;
@@ -424,18 +401,6 @@ Responsive Mobile */
         line-height: normal;
     }
 
-    .form {
-        width: 320px;
-        height: 347px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        background: #FFF;
-        width: 80%;
-        margin: 0 auto;
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-bottom: 89px;
-    }
 
     .field-title {
         color: #808080;
@@ -481,6 +446,65 @@ Responsive Mobile */
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
+    }
+
+
+    .form input {
+        color: #808080;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        box-sizing: border-box;
+        line-height: 25px;
+        border-radius: 10px;
+        width: 100%;
+        height: 41px;
+    }
+
+    .cvc input {
+        font-size: 14px;
+    }
+
+    .name input {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding-bottom: 98px;
+    }
+
+    .number,
+    .date,
+    .cvc {
+        padding-top: 24px;
+    }
+
+    .field-title {
+        color: #808080;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #YY {
+        color: #808080;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        margin-right: 17px;
+        width: 72px;
+
+    }
+
+    .btn {
+        width: 100%;
+        padding: 16px;
+        
+
     }
 
 }
