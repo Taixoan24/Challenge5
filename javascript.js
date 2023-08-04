@@ -33,7 +33,7 @@ function confirmBtnClick(ev) {
         document.querySelector('.name-error').style.display = 'initial';
     }
     else {
-      document.querySelector('.name-error').style.display = 'none';
+        document.querySelector('.name-error').style.display = 'none';
     }
     // Check numberber input
     if (number_input.value === '' || number_input.value.length < 16) {
@@ -187,7 +187,7 @@ function number_input_process_value(ev) {
 }
 function continueBtn() {
     location.reload();
-    document.querySelector('.completion-message').style.display = 'none'  
+    document.querySelector('.completion-message').style.display = 'none'
     document.querySelector('.form').style.display = 'flex'
     document.querySelector('.completion').style.display = 'none'
 

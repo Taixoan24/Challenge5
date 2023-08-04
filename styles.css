@@ -16,13 +16,13 @@ body {
     background-image: url(./Images/Backround_colors.svg);
     background-size: 30%;
     background-repeat: no-repeat;
-   
+
 }
 
 .content {
     display: flex;
     align-items: center;
- 
+
 }
 
 .cards {
@@ -95,7 +95,7 @@ input {
 }
 
 .YY {
-    
+
     top: 433px;
     left: 755px;
 
@@ -117,7 +117,8 @@ input {
 .date-cvc {
     display: flex;
 }
-.date-cvc input{
+
+.date-cvc input {
     width: 220px;
 }
 
@@ -143,18 +144,23 @@ input {
 .number {
     position: relative;
 }
+
 .error {
     border-color: #f00;
 }
+
 .date input {
     width: 90px;
 }
+
 .cvc {
     position: relative;
 }
+
 .error-message {
     position: absolute;
 }
+
 .field-title {
     color: #808080;
     font-style: normal;
@@ -163,6 +169,7 @@ input {
     margin-left: 14px;
     margin-bottom: 10px;
 }
+
 .name-input,
 .number-input {
     color: #808080;
@@ -171,6 +178,7 @@ input {
     line-height: 25px;
     width: 100%;
 }
+
 #MM {
     color: #808080;
     text-align: center;
@@ -180,6 +188,7 @@ input {
     margin-right: 10px;
     text-indent: 5px;
 }
+
 #YY {
     color: #808080;
     text-align: center;
@@ -238,7 +247,7 @@ input {
 .name-error,
 .month-error-message,
 .year-error-message,
-.cvc-error{
+.cvc-error {
     color: #f00;
     display: none;
     font-size: 12px;
@@ -269,11 +278,12 @@ form input[type="text"] {
 .date-cvc {
     display: flex;
 }
+
 .dates {
     display: flex;
 }
 
-#btn-continue{
+#btn-continue {
     background-color: black;
     width: 100%;
     padding: 21px 0px 20px 0px;
@@ -289,6 +299,7 @@ form input[type="text"] {
     font-family: Roboto;
     font-size: 16px;
 }
+
 /* Complete */
 
 .completion {
@@ -296,24 +307,29 @@ form input[type="text"] {
     width: 460px;
     margin-bottom: -215px;
 }
-.complete-text{
+
+.complete-text {
     width: 100%;
     flex-direction: column;
 }
+
 .card_details {
     margin-bottom: 20px;
     margin-bottom: 20px;
     color: hsl(279deg, 6%, 55%);
     text-align: center;
 }
+
 .thanks {
     text-align: center;
     margin-bottom: 40px;
 }
+
 .img-complete {
     margin-bottom: 20px;
     text-align: center;
 }
+
 /* 
 Responsive Mobile */
 @media only screen and (max-width:768px) {
@@ -338,6 +354,7 @@ Responsive Mobile */
         margin: 0 auto;
         margin-bottom: 98px;
     }
+
     .content {
         font-family: 'Montserrat', sans-serif;
     }
@@ -380,13 +397,16 @@ Responsive Mobile */
         flex-shrink: 0;
         padding-top: 40px;
     }
+
     .content {
         flex-direction: column;
     }
+
     .form {
         margin: 0 40px;
-        width:320px;
+        width: 320px;
     }
+
     .cvc-input {
         color: #808080;
         font-size: 16px;
@@ -394,6 +414,7 @@ Responsive Mobile */
         font-weight: 400;
         width: 160px;
     }
+
     .name-input,
     .number-input,
     input {
@@ -483,7 +504,7 @@ Responsive Mobile */
         color: #DEDDDF;
         font-style: normal;
     }
-    
+
     .Y {
         top: 230px;
         left: 262px;
@@ -510,10 +531,10 @@ Responsive Mobile */
         height: 41px;
     }
 
-    .name input{
+    .name input {
         font-size: 14px;
     }
-   
+
 
     .submit-btn {
         padding-bottom: 98px;
@@ -564,6 +585,7 @@ Responsive Mobile */
         margin-right: 160px;
         margin-top: -24px;
     }
+
     .complete-text {
         margin-bottom: 20px;
         width: 100%;
